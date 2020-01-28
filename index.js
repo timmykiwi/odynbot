@@ -73,7 +73,7 @@ client.on("message", async msg => {
 
 if(msg.author.bot) return;
   if(msg.channel.type !== "text") return;
-  if(msg.content.startsWith(prefix.prefix + "czy-roker-powinien-otrzymac-range")){
+  if(msg.content.startsWith(prefix.prefix + "czyrokerpowinienotrzymacrange")){
   var pv = new Discord.RichEmbed()
   .setColor("RANDOM")
   .setDescription(`**NIE**`)
