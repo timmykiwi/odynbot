@@ -71,6 +71,7 @@ client.on("message", async msg => {
 }
 });
 
+
 client.on("message", async msg => {
 
 if(msg.author.bot) return;
