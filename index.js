@@ -76,7 +76,7 @@ if(msg.author.bot) return;
   if(msg.content.startsWith(prefix.prefix + "czy-roker-powinien-otrzymac-range")){
   var pv = new Discord.RichEmbed()
   .setColor("RANDOM")
-  .setTitle(`**NIE**`)
+  .setDescription(`**NIE**`)
     .setImage(`https://i.imgur.com/PGLz1bC.png`)
       .setTimestamp()
   .setFooter(`OdynBot`)
