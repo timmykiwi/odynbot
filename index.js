@@ -80,7 +80,7 @@ if(msg.author.bot) return;
   var pv = new Discord.RichEmbed()
   .setColor("RANDOM")
   .setDescription(`**NIE**`)
-    .setImage(`https://i.imgur.com/PGLz1bC.png`)
+    .setImage(`https://i.imgur.com/4PddGJ3.png`)
       .setTimestamp()
   .setFooter(`OdynBot`)
   msg.channel.send(pv);
