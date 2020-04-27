@@ -87,6 +87,8 @@ if(msg.author.bot) return;
 }
 });
 
+client.on("message", async msg => {
+    
 if(msg.author.bot) return;
   if(msg.channel.type !== "text") return;
   if(msg.content.startsWith(prefix.prefix + "kdgg")){
