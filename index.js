@@ -87,6 +87,19 @@ if(msg.author.bot) return;
 }
 });
 
+if(msg.author.bot) return;
+  if(msg.channel.type !== "text") return;
+  if(msg.content.startsWith(prefix.prefix + "kdgg")){
+  var pv = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .setDescription(`**KDGG NA BANA**`)
+    .setImage(`https://i.imgur.com/eOQaSfz.png`)
+      .setTimestamp()
+  .setFooter(`OdynBot`)
+  msg.channel.send(pv);
+}
+});
+
 config({
     path: __dirname + "/.env"
 });
