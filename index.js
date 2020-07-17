@@ -17,9 +17,8 @@ config({
 });
 
 const activities_list = [
-    "/pomoc",
-    "Bot dla serwera OdynLive",
-    "kontakt: @timmy#8307",
+    "wpisz /pomoc!",
+    "kontakt: @Timmy#9064",
     ];
 
 client.on('ready', () => {
@@ -45,6 +44,20 @@ client.on("message", async msg => {
 }
 });
 
+client.on("message", async msg => {
+
+  if(msg.author.bot) return;
+  if(msg.channel.type !== "text") return;
+  if(msg.content.startsWith(prefix.prefix + "sub")){
+  var pv = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .setDescription(`Tutaj sprawdzisz, czy transmisja na żywo jest zaplanowana, a jeśli tak, to na kiedy:
+    https://www.youtube.com/c/Nierezuelo/live`)
+      .setTimestamp()
+  .setFooter(`OdynBot`)
+  msg.channel.send(pv);
+}
+});
 
 client.on("message", async msg => {
 
