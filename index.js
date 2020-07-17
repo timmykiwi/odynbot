@@ -48,7 +48,7 @@ client.on("message", async msg => {
 
   if(msg.author.bot) return;
   if(msg.channel.type !== "text") return;
-  if(msg.content.startsWith(prefix.prefix + "sub")){
+  if(msg.content.startsWith(prefix.prefix + "live")){
   var pv = new Discord.RichEmbed()
   .setColor("RANDOM")
   .setDescription(`Tutaj sprawdzisz, czy transmisja na żywo jest zaplanowana, a jeśli tak, to na kiedy:
@@ -68,6 +68,8 @@ client.on("message", async msg => {
   .setColor("RANDOM")
   .setTitle(`**ODYNBOT - KOMENDY**`)
   .setDescription(`/sub - link do kanału OdynLive.
+
+    /live - link do transmisji OdynLive.
 
     /k **@user** **powód** - wyrzuca daną osobę z serwera.
 
