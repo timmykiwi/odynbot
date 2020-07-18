@@ -44,6 +44,8 @@ client.on("message", async msg => {
 }
 });
 
+
+
 client.on("message", async msg => {
 
   if(msg.author.bot) return;
@@ -56,6 +58,18 @@ client.on("message", async msg => {
       .setTimestamp()
   .setFooter(`OdynBot`)
   msg.channel.send(pv);
+}
+});
+
+
+
+client.on("message", async msg => {
+
+  if(msg.author.bot) return;
+  if(msg.channel.type !== "text") return;
+  if(msg.content.startsWith(prefix.prefix + "sub")){
+  return.message.reply(":harold:");
+
 }
 });
 
