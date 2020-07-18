@@ -57,7 +57,7 @@ client.on("message", async msg => {
     https://www.youtube.com/c/Nierezuelo/live`)
       .setTimestamp()
   .setFooter(`OdynBot`)
-  msg.author.send(Embed);
+  msg.author.send(pv);
 }
 });
 
