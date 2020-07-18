@@ -62,17 +62,6 @@ client.on("message", async msg => {
 });
 
 
-
-client.on("message", async msg => {
-
-  if(msg.author.bot) return;
-  if(msg.channel.type !== "text") return;
-  if(msg.content.startsWith(":harold:")){
-  return.message.reply(":harold:");
-
-}
-});
-
 client.on("message", async msg => {
 
   if(msg.author.bot) return;
