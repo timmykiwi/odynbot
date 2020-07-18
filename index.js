@@ -58,6 +58,7 @@ client.on("message", async msg => {
       .setTimestamp()
   .setFooter(`OdynBot`)
   msg.author.send(pv);
+      .then(m => m.delete(5000));
 }
 });
 
