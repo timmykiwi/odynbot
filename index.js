@@ -72,7 +72,7 @@ client.on("message", async msg => {
   .setImage(`https://i.imgur.com/scOUQjA.jpg`)
       .setTimestamp()
   .setFooter(`OdynBot`)
-  msg.author.send(pv);
+  msg.channel.send(pv);
 }
 });
 
