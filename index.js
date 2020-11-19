@@ -18,7 +18,7 @@ config({
 
 const activities_list = [
     "wpisz /pomoc!",
-    "kontakt: @Timmy#9064",
+    "kontakt: @timmyyy#0001",
     ];
 
 client.on('ready', () => {
@@ -55,6 +55,21 @@ client.on("message", async msg => {
   .setColor("RANDOM")
   .setDescription(`Tutaj sprawdzisz, czy transmisja na żywo jest zaplanowana, a jeśli tak, to na kiedy:
     https://www.youtube.com/c/Nierezuelo/live`)
+      .setTimestamp()
+  .setFooter(`OdynBot`)
+  msg.author.send(pv);
+}
+});
+
+client.on("message", async msg => {
+
+  if(msg.author.bot) return;
+  if(msg.channel.type !== "text") return;
+  if(msg.content.startsWith(prefix.prefix + "ryba")){
+  var pv = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .setDescription(`mordo pogchamp ale ryba wielka pa na to`)
+  .setImage(`https://i.imgur.com/scOUQjA.jpg`)
       .setTimestamp()
   .setFooter(`OdynBot`)
   msg.author.send(pv);
